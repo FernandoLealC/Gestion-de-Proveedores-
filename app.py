@@ -511,7 +511,7 @@ with col_a2:
         values=df_asig["Peso Óptimo (%)"],
         hole=0.50, textinfo="label+percent",
         marker=dict(colors=px.colors.qualitative.D3),
-        hovertemplate="<b>%{label}</b><br>%{percent}<br>${:,.0f}<extra></extra>".format(gasto_total)
+        hovertemplate="%{label}: %{percent}<extra></extra>"
     ))
     fig_dona.update_layout(
         title=f"Distribución óptima — Total: ${gasto_total:,.0f}",
